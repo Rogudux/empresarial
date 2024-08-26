@@ -3,4 +3,11 @@ let numero2:number = 0
 
 numero2 = numero1 + numero1
 
-console.log (numero2)
+let encendido:boolean;
+encendido = true;
+
+console.log('Estado:', encendido);
+
+encendido = true && false;
+console.log(encendido);
+
