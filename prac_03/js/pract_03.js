@@ -71,10 +71,10 @@ var miArray5 = [];
 miArray5.push('Diego');
 miArray5.push(20);
 miArray5.push(true);
-miArray5.push('https://static.wikia.nocookie.net/doblaje/images/3/34/Diego_%281%29.png/revision/latest?cb=20140802080253&path-prefix=es');
+miArray5.push('https://img.a.transfermarkt.technology/portrait/big/182711-1694080053.png?lm=1');
 miArray5.push('Sebastian');
 miArray5.push(25);
-miArray5.push('https://disneyypixar.fandom.com/es/wiki/Sebastian?file=Sebastian_KH2.png');
+miArray5.push('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_A1mzKEdulgj-NFL3WFk0AvCpP3i3R1C0FQ&s');
 // Obtener las figuras por ID
 var figura1 = document.getElementById("figura1");
 var figura2 = document.getElementById("figura2");
