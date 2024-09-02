@@ -68,13 +68,13 @@ miArray4.push(3);
 console.log(miArray4.length);
 console.log(miArray4.reverse());
 var miArray5 = [];
-miArray5.push('Carlos');
+miArray5.push('Diego');
 miArray5.push(20);
 miArray5.push(true);
-miArray5.push('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDhCRLDorEoL4rXQ5P6ZbeTBIJemh2vakP_A&s');
-miArray5.push('Juan');
+miArray5.push('https://static.wikia.nocookie.net/doblaje/images/3/34/Diego_%281%29.png/revision/latest?cb=20140802080253&path-prefix=es');
+miArray5.push('Sebastian');
 miArray5.push(25);
-miArray5.push('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/36969.png');
+miArray5.push('https://disneyypixar.fandom.com/es/wiki/Sebastian?file=Sebastian_KH2.png');
 // Obtener las figuras por ID
 var figura1 = document.getElementById("figura1");
 var figura2 = document.getElementById("figura2");
