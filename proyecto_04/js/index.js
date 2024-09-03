@@ -16,3 +16,14 @@ person.first = "Pablo";
 var first = person.first, second = person.second, _a = person.age, age = _a === void 0 ? 30 : _a;
 first = "Pipe";
 console.log(first);
+function fibonacciSeries(n) {
+    var series = [0, 1];
+    for (var i = 2; i < n; i++) {
+        var nextNumber = series[i - 1] + series[i - 2];
+        series.push(nextNumber);
+    }
+    return series;
+}
+var n = 10; // Change this value to generate Fibonacci series up to a different number
+var fibonacci = fibonacciSeries(n);
+console.log(fibonacci);

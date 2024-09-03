@@ -30,7 +30,17 @@ first = "Pipe";
 
 console.log(first);
 
-for(let i=0; i = 100; i++)
-    {
-        i=0
+function fibonacciSeries(n: number): number[] {
+    const series: number[] = [0, 1];
+ 
+    for (let i = 2; i < n; i++) {
+        const nextNumber = series[i - 1] + series[i - 2];
+        series.push(nextNumber);
     }
+ 
+    return series;
+}
+ 
+const n:number = 10; // Change this value to generate Fibonacci series up to a different number
+const fibonacci:number[] = fibonacciSeries(n);
+console.log(fibonacci);
