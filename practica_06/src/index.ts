@@ -44,3 +44,13 @@ enum Volumen{
 
 let volumen: Volumen = Volumen.mid;
 console.log('Volumen ',volumen);
+
+enum CantidadProductos{
+    max = 200,
+    mix = 1,
+    vacio = 0
+}
+
+let productos : CantidadProductos = CantidadProductos.max;
+
+console.log('Cantidad de productos en el carrito: ',productos);
