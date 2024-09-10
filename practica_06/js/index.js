@@ -36,3 +36,11 @@ var Volumen;
 })(Volumen || (Volumen = {}));
 var volumen = Volumen.mid;
 console.log('Volumen ', volumen);
+var CantidadProductos;
+(function (CantidadProductos) {
+    CantidadProductos[CantidadProductos["max"] = 200] = "max";
+    CantidadProductos[CantidadProductos["mix"] = 1] = "mix";
+    CantidadProductos[CantidadProductos["vacio"] = 0] = "vacio";
+})(CantidadProductos || (CantidadProductos = {}));
+var productos = CantidadProductos.max;
+console.log('Cantidad de productos en el carrito: ', productos);
