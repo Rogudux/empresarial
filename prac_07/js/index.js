@@ -5,7 +5,7 @@ var resultado = sum(2, 4);
 console.log(resultado);
 var Fsuma = sum(1, 3);
 console.log(Fsuma);
-//Funciones arrow
+//Funciones arrow                                                                                                                                                                                                                                                                                                                           
 var sumaArrow = function (a, b) { return a + b; };
 var resultadoArrow = sumaArrow(2, 4);
 console.log(resultadoArrow);
