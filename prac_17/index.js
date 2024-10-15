@@ -1,4 +1,3 @@
-const _ = require('lodash');
 
 const array = [1,2,3,4,5,6,7,8,9,10];
 
@@ -58,12 +57,28 @@ const obtieneNumero = () =>{
 let result = _.times(5, obtieneNumero);
 console.log(result);
 
-//Reto1
-//Crear un arreglo con 100 numeros aleatorios y mostrar los numeros pares y los impares en distintos arreglos
 
-//RETO2
-//Crear un arreglo con 100 numeros aleatorios y mostrar los numeros primos y los no primos en arreglos distintos 
 
-//Reto 3
-//Crear un arreglo de nombres y mostrar los nombres que empiecen con la letra a
-//los q no empiecen ponlo en arreglo diferente 
+// Reto 1: Pares e impares
+const numerosAleatorios = _.times(100, () => _.random(0, 100));
+const [pares, impares] = _.partition(numerosAleatorios, (n) => n % 2 === 0);
+document.getElementById('paresImpares').textContent = `Pares: ${pares}\nImpares: ${impares}`;
+
+
+// Reto 2: Primos y no primos
+const esPrimo = (num) => {
+    if (num < 2) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+};
+const [primos, noPrimos] = _.partition(numerosAleatorios, esPrimo);
+document.getElementById('primosNoPrimos').textContent = `Primos: ${primos}\nNo Primos: ${noPrimos}`;
+
+
+// Reto 3: Nombres con 'A'
+let nombres = ['Ana', 'Pedro', 'Alfredo', 'Luis', 'Amelia', 'Carlos', 'Andrea', 'Sebastian', 'Alonso', 'Maria'];
+const [nombresConA, nombresSinA] = _.partition(nombres, (nombre) => nombre.toLowerCase().startsWith('a'));
+document.getElementById('nombresConA').textContent = `Con A: ${nombresConA}\nSin A: ${nombresSinA}`;
+
